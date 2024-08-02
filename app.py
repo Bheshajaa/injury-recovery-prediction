@@ -38,7 +38,7 @@ y_train = train_data['Recovery_Period']
 X_test = test_data[['Callorie', 'Age', 'Weight', 'Fitness_Level', 'Gender', 'Type', 'Injury_Encoded']]
 y_test = test_data['Recovery_Period']
 
-# Normalize the features
+# Normaize the features
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
